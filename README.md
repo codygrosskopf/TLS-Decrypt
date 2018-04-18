@@ -1,6 +1,6 @@
-## Microsoft Windows
+### Microsoft Windows
 
-### Individual
+#### Individual
 ```
 PS C:\Users\cgrosskopf\Downloads> certutil -addstore "CA" "certificate as .cer"
 CA "Intermediate Certification Authorities"
@@ -8,7 +8,7 @@ Signature matches Public Key
 Certificate "decrypt.scoe.org" added to store.
 CertUtil: -addstore command completed successfully.
 ```
-### Group Policy Object - https://youtu.be/IdLTfCc-DYg
+#### Group Policy Object - https://youtu.be/IdLTfCc-DYg
 
 1. Right click Start Menu -> Run -> gpmc.msc
 2. Expand Forest -> Domains -> Domain
@@ -26,7 +26,7 @@ CertUtil: -addstore command completed successfully.
 14. Link GPO by right clicking Organizational Unit -> Link an Existing GPO...
 15. Select GPO and click OK
 
-### Group Policy Object verification - https://youtu.be/Mdsh7G5yoo0
+#### Group Policy Object verification - https://youtu.be/Mdsh7G5yoo0
 
 1. Right click Start Menu -> Run -> certmgr.msc
 2. Expand “Trusted Root Certification Authorities” -> Certificates
@@ -34,11 +34,11 @@ CertUtil: -addstore command completed successfully.
 
 
 
-## Mac OS independent
+### Mac OS independent
 ```
 sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain <crt file>
 ```
-### JAMF
+#### JAMF
 
 1. Computers -> Configuration Profile -> New
 2. Options -> General -> Name “SCOE Decrypt"
@@ -50,7 +50,7 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 8. Save
 
 
-### Mosyle
+#### Mosyle
 
 1. Management -> Certificates (Under Management Profile)
 2. Add new profile
@@ -61,9 +61,9 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 
 
 
-## Linux
+### Linux
 
-### Debian Based
+#### Debian Based
 ```
 codyg@server:~$ sudo mkdir /usr/local/share/ca-certificates/scoe
 [sudo] password for codyg:
@@ -75,7 +75,7 @@ Running hooks in /etc/ca-certificates/update.d...
 done.
 codyg@server:~$
 ```
-### CentOS Based
+#### CentOS Based
 ```
 [cgrosskopf@server ~]$ sudo cp cert_pa-5220-scoe.crt /etc/pki/ca-trust/source/anchors/
 [sudo] password for cgrosskopf:
@@ -84,7 +84,7 @@ codyg@server:~$
 [cgrosskopf@server ~]$
 ```
 
-## Google Admin Panel - https://youtu.be/c1orS9KKIIs
+### Google Admin Panel - https://youtu.be/c1orS9KKIIs
 
 1. Download the cert_pa-5220-scoe.crt
 2. Login to G-Suite admin console at https://admin.google.com
