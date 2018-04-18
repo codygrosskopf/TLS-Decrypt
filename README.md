@@ -94,8 +94,3 @@ codyg@server:~$
 6. Once the certificate is uploaded check the ‘Use this certificate as HTTPs certificate authority’ checkbox.
 7. Click ‘Save’ in the bottom right corner
 
-```the dog raA away
-
-and ate a cat```
-
-asdfasdf
