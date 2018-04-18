@@ -59,8 +59,7 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 5. Profile Assignment -> “Apply to all current and future devices"
 6. Save
 
-
-
+![mosyle](https://raw.githubusercontent.com/codygrosskopf/TLS-Decrypt/master/mosyle.png)
 ### Linux
 
 #### Debian Based
