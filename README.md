@@ -1,14 +1,12 @@
-# TLS-Decrypt
-
 ## Microsoft Windows
 
 ### Individual
 
-```PS C:\Users\cgrosskopf\Downloads> certutil -addstore CA certificate as .cer
-CA Intermediate Certification Authorities
+PS C:\Users\cgrosskopf\Downloads> certutil -addstore "CA” “certificate as .cer"
+CA "Intermediate Certification Authorities"
 Signature matches Public Key
-Certificate decrypt.scoe.org added to store.
-CertUtil: -addstore command completed successfully.```
+Certificate "decrypt.scoe.org" added to store.
+CertUtil: -addstore command completed successfully.
 
 ### Group Policy Object - https://youtu.be/IdLTfCc-DYg
 
@@ -93,7 +91,3 @@ codyg@server:~$
 5. Click ‘Add Certificate’ and upload the SSL file from step 1. 
 6. Once the certificate is uploaded check the ‘Use this certificate as HTTPs certificate authority’ checkbox.
 7. Click ‘Save’ in the bottom right corner
-
-
-
-
