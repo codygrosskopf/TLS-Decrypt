@@ -4,11 +4,11 @@
 
 ### Individual
 
-> PS C:\Users\cgrosskopf\Downloads> certutil -addstore "CA" "certificate as .cer"
-> CA "Intermediate Certification Authorities"
-> Signature matches Public Key
-> Certificate "decrypt.scoe.org" added to store.
-> CertUtil: -addstore command completed successfully.
+```PS C:\Users\cgrosskopf\Downloads> certutil -addstore \"CA\" \"certificate as .cer\"
+CA "Intermediate Certification Authorities"
+Signature matches Public Key
+Certificate \"decrypt.scoe.org\" added to store.
+CertUtil: -addstore command completed successfully.```
 
 ### Group Policy Object - https://youtu.be/IdLTfCc-DYg
 
