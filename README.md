@@ -1,13 +1,13 @@
 ## Microsoft Windows
 
 ### Individual
-
+```
 PS C:\Users\cgrosskopf\Downloads> certutil -addstore "CA” “certificate as .cer"
 CA "Intermediate Certification Authorities"
 Signature matches Public Key
 Certificate "decrypt.scoe.org" added to store.
 CertUtil: -addstore command completed successfully.
-
+```
 ### Group Policy Object - https://youtu.be/IdLTfCc-DYg
 
 1. Right click Start Menu -> Run -> gpmc.msc
@@ -35,9 +35,9 @@ CertUtil: -addstore command completed successfully.
 
 
 ## Mac OS independent
-
+```
 sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain <crt file>
-
+```
 ### JAMF
 
 1. Computers -> Configuration Profile -> New
@@ -64,6 +64,7 @@ sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keyc
 ## Linux
 
 ### Debian Based
+```
 codyg@server:~$ sudo mkdir /usr/local/share/ca-certificates/scoe
 [sudo] password for codyg:
 codyg@server:~$ sudo cp cert_pa-5220-scoe.crt /usr/local/share/ca-certificates/scoe/
@@ -73,14 +74,15 @@ Updating certificates in /etc/ssl/certs...
 Running hooks in /etc/ca-certificates/update.d...
 done.
 codyg@server:~$
-
+```
 ### CentOS Based
+```
 [cgrosskopf@server ~]$ sudo cp cert_pa-5220-scoe.crt /etc/pki/ca-trust/source/anchors/
 [sudo] password for cgrosskopf:
 [cgrosskopf@server ~]$ sudo update-ca-trust force-enable
 [cgrosskopf@server ~]$ sudo update-ca-trust extract
 [cgrosskopf@server ~]$
-
+```
 
 ## Google Admin Panel - https://youtu.be/c1orS9KKIIs
 
